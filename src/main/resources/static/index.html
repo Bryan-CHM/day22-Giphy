@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/giphy" method="GET" >
+        <table  >
+            <tr>
+                <td><label for="phrase">Phrase</label>
+                </td>
+                <td>
+                    <input type="text" name="phrase" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="limit">Limit</label>
+                </td>
+                <td>
+                    <select name="limit" id="">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="rating">Rating</label>
+                </td>
+                <td>
+                    <select name="rating" id="">
+                        <option value="g">g</option>
+                        <option value="pg" selected>pg</option>
+                        <option value="pg-13">pg-13</option>
+                        <option value="r">r</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
