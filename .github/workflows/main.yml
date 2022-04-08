@@ -32,7 +32,7 @@ jobs:
         secret_key: ${{secrets.secret_key}}
         space_name: spacebucket
         space_region: sgp1
-        source: .github/badge/jacoco.svg
+        source: .github/badges/jacoco.svg
         out_dir: coverage/${{github.event.respository.name}}
         permission: public-read
     - name: Upload coverage report
@@ -42,6 +42,6 @@ jobs:
         secret_key: ${{secrets.secret_key}}
         space_name: spacebucket
         space_region: sgp1
-        source: .github/badge/jacoco.svg
+        source: target/site/jacoco
         out_dir: coverage/${{github.event.respository.name}}/report
         permission: public-read
